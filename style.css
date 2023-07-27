@@ -4,11 +4,25 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+.ann{
+    transition: transform 0.3s , background-color 0.5s ease-in-out, color 0s;
+}
+.ann:hover{
+    transform: translateY(-10px);
+    box-shadow: 1px 5px 20px 6px rgba(149,206,195,0.53);
+    -webkit-box-shadow: 1px 5px 20px 6px rgba(149,206,195,0.53);
+    -moz-box-shadow: 1px 5px 20px 6px rgba(149,206,195,0.53);
 
+}
+.ann:active{
+    background-color:#13648f9e;
+    color: aliceblue;
+}
 /*start navbare*/
 #navbare{
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 nav{
     border-radius: 55px;
@@ -260,6 +274,7 @@ nav a:hover{
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 70;
 }
 
 .box_modal{
