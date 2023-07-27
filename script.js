@@ -48,6 +48,7 @@ for (let i=0;i<8;i++){
     like_button[i].addEventListener("click",function(){
         if (like_button[i].style.color==="red"){
             like_button[i].style.color="black"
+            
         }
         else{
             like_button[i].style.color="red"
